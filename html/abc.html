@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Toll Gate Payment</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h1>Welcome to Online Toll Gate Payment</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="payment.html">Login</a></li>
+                <li><a href="#toll-gates">Toll Gates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Easy and Convenient Toll Payments</h2>
+        <p>Make toll payments online with our user-friendly platform.</p>
+        <a href="#register" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="register">
+        <h2>Register for an Account</h2>
+        <!-- Registration form goes here -->
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <button type="submit" class="cta-button">Register</button>
+        </form>
+        
+    </section>
+
+    <section id="login">
+        <h2>Login to Your Account</h2>
+        <!-- Login form goes here -->
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+        
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+        
+            <button type="button" class="cta-button" onclick="redirectToDashboard()">Login</button>
+        </form>
+        
+    </section>
+
+    <section id="toll-gates">
+        <h2>Explore Toll Gates</h2>
+        <!-- Display toll gate information and map goes here -->
+        <div class="toll-gate">
+            <h3>Toll Gate 1</h3>
+            <p>Location: City A</p>
+            <p>Fees: $2.00</p>
+        </div>
+        
+        <div class="toll-gate">
+            <h3>Toll Gate 2</h3>
+            <p>Location: City B</p>
+            <p>Fees: $1.50</p>
+        </div>
+        
+        <!-- Add more toll gate information as needed -->
+        
+    </section>
+    <footer>
+        <p>&copy; 2023 Online Toll Gate Payment</p>
+    </footer>
+    <script>
+        function redirectToDashboard() {
+            // Replace 'payment.html' with the actual page you want to redirect to
+            window.location.href = 'payment.html';
+        }
+    </script>
+</body>
+</html>
